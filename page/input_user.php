@@ -11,9 +11,8 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="stylesheet" href="../assets/css/custom.css">
+  <link rel="stylesheet" href="../assets/css/validation-form.css">
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin=" -->
-	anonymous"></script>
 </head>
 
 <body>
@@ -84,16 +83,24 @@
                 <div class="form-group">
                   <label>Nama</label>
                   <input type="text" class="form-control" id="nama" name="nama">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="invalid-input">Error message</div>
                 </div>
                 <div class="form-group">
                   <label>Email</label>
                   <input type="email" class="form-control" id="email" name="email">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="invalid-input">Error message</div>
                 </div>
                 <div class="form-group">
                   <label>Nomor Hp</label>
-                  <input type="text" class="form-control" id="nomor" name="nomor">
-                </div>
-                
+                  <input type="number" class="form-control" id="nomor" name="nomor">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="invalid-input">Error message</div>
+                </div>                
                 <div class="form-group">
                   <label>Jenis Kelamin</label>
                   <div class="form-check">
@@ -118,11 +125,14 @@
                 <div class="form-group">
                   <label>Password</label>
                   <input type="text" class="form-control" id="password" name="password">
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <div class="invalid-input">Error message</div>
                 </div>
 
               </div>
               <div class="card-footer text-right">
-                <button type="button" class="btn btn-primary" id="submit-user">Submit</button>
+                <button type="button" class="btn btn-primary" id="submit-user">Simpan</button>
               </div>
             </form>
 
