@@ -3,12 +3,19 @@
 
 .input-pengukuran-section .wrap-dua,
 .input-pengukuran-section .wrap-satu {
-	margin-top:15px;
-	margin-bottom:15px;
+	margin-top:5px;
+}
+
+.form-group .invalid-input {
+	font-size: 11px;
+}
+
+.form-group label {
+	margin-bottom: 3px;
 }
 
 .input-pengukuran-section .wrap-dua {
-	border-left: 3px solid rgb(155,155,155);
+	border-left: 1px solid rgb(155,155,155);
 }
 
 .input-gardu-section .form-group, 
@@ -17,13 +24,20 @@
 	margin-bottom: 0;
 }
 
-.input-gardu-section i, 
-.input-pengukuran-section i {
+.input-gardu-section i {
 	visibility: hidden;
 	position: absolute;
 	top: 40px;
 	right: 10px;
 }
+
+.input-pengukuran-section i {
+	visibility: hidden;
+	position: absolute;
+	top: 33px;
+	right: 10px;
+}
+
 
 .input-gardu-section .success input,
 .input-pengukuran-section .success input {
@@ -58,5 +72,31 @@
 	visibility: visible;
 }
 
+.input-pengukuran-section .wrap-dua-A {
+	margin-left: 30px;
+}
 
+.input-pengukuran-section input[type=text], 
+.input-pengukuran-section input[type=date],
+.input-pengukuran-section input[type=time] {
+	height: 30px !important;
+	font-size: 12px !important;
+	padding: 10px !important;
+}
 
+.input-pengukuran-section .wrap-dua-A input {
+	height: 30px !important;
+	font-size: 10px;
+}
+
+@media(max-width: 767px) {
+
+	.input-pengukuran-section .wrap-dua {
+		margin-top: 0px;
+		border-left: none;
+	}
+	.input-pengukuran-section .wrap-satu {
+		margin-bottom: 0px;
+	}
+
+}

@@ -1,7 +1,10 @@
+document.getElementById('tanggal').valueAsDate = new Date();
+var x = new Date()
+document.getElementById('waktu').value = "1:1";
+
 /*###############################
             Input User
 ###############################*/
-
 
 $('#submit-user').click(function() {
     var nama = $('#nama');
@@ -106,6 +109,98 @@ function checkInput(nama, email, nomor){
         removeClassInput(nama);
         removeClassInput(email);
         removeClassInput(nomor);
+    }
+
+    return error;
+}
+
+
+/*###############################
+        Input Pengukuran
+###############################*/
+$('#submit-pengukuran').click(function() {
+    var kode = $('#kode');
+    var tanggal = $("#tanggal")
+    var waktu = $('#waktu');
+    var tim = $('#tim');
+    var daya = $('#daya');
+    var alamat = $('#alamat');
+    var indukN = $('#indukN');
+    var jurusanA = $('#jurusanA');
+    var jurananAR = $('#jurusanAR');
+    var jurananAS = $('#jurusanAS');
+    var jurananAT = $('#jurusanAT');
+    var jurananAN = $('#jurusanAN');
+    var jurusanB = $('#jurusanB');
+    var jurananBR = $('#jurusanBR');
+    var jurananBS = $('#jurusanBS');
+    var jurananBT = $('#jurusanBT');
+    var jurananBN = $('#jurusanBN');
+    var jurusanC = $('#jurusanC');
+    var jurananCR = $('#jurusanCR');
+    var jurananCS = $('#jurusanCS');
+    var jurananCT = $('#jurusanCT');
+    var jurananCN = $('#jurusanCN');
+    var teganganRS = $('#teganganRS');
+    var teganganRT = $('#teganganRT');
+    var teganganST = $('#teganganST');
+    var teganganRN = $('#teganganRN');
+    var teganganSN = $('#teganganSN');
+    var teganganTN = $('#teganganTN');
+
+
+    if(!checkInput(kode, daya)){
+        $.post("input_pengukuran_model.php", {
+            add_pengukuran:"",
+            nama:nama.val().trim(),
+            email:email.val().trim(),
+            nomor_hp:nomor.val().trim(),
+            jenis_kelamin:jenisKelamin,
+            alamat:alamat.val(),
+            password:password.val().trim()
+        },function(data, status){
+            swal("", "Data Sudah Ditambahkan", "success");
+            $('#nama').val("");
+            $('#email').val("");
+            $('#nomor').val("");
+            lk.prop('checked',true)
+            $('#alamat').val("");
+            $('#password').val("");
+        });
+    }
+})
+
+// $('.input-gardu-section #kode').keyup(function(){
+//     var valNama = $(this).val().trim();
+//     if(valNama == ""){
+//         setErrorFor($(this), 'Nama Tidak Boleh Kosong');
+//     }else{
+//         setSuccessFor($(this));
+//     }
+// })
+
+function checkInput(kode, daya){
+    var valKode = kode.val().trim();
+    var valDaya = daya.val().trim();
+    var error = false;
+
+    if(valKode == ""){
+        setErrorFor(kode, 'Kode Tidak Boleh Kosong');
+        error = true;
+    }else{
+        setSuccessFor(kode);
+    }
+
+    if(valDaya == ""){
+        setErrorFor(daya, 'Daya Tidak Boleh Kosong');
+        error = true;
+    }else{
+        setSuccessFor(daya);
+    }
+
+    if(!error){
+        removeClassInput(kode);
+        removeClassInput(daya);
     }
 
     return error;

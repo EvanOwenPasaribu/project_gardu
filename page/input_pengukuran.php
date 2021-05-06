@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="in">
 
 <head>
   <meta charset="UTF-8">
@@ -124,11 +124,7 @@
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
-                  </div>
-                </div>
 
-                <div class="col-md-6 wrap-dua">
-                  <div class="card-body">
                     <div class="form-group">
                       <label>Induk N</label>
                       <input type="text" class="form-control" id="indukN" name="indukN">
@@ -136,6 +132,8 @@
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+
+                    <!-- Jurusan A -->
                     <div class="form-group">
                       <label>Jurusan A</label>
                       <input type="text" class="form-control" id="jurusanA" name="jurusanA">
@@ -143,47 +141,181 @@
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+                    <div class="row wrap-dua-A">
+                      <div class="form-group col-md-6">
+                        <label>A Jurusan R</label>
+                        <input type="text" class="form-control" id="jurusanAR" name="jurusanAR">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>A Jurusan S</label>
+                        <input type="text" class="form-control" id="jurusanAS" name="jurusanAS">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>A Jurusan T</label>
+                        <input type="text" class="form-control" id="jurusanAT" name="jurusanAT">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>A Jurusan N</label>
+                        <input type="text" class="form-control" id="jurusanAN" name="jurusanAN">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="col-md-6 wrap-dua">
+                  <div class="card-body">
+                    <!-- Jurusan B -->
                     <div class="form-group">
-                      <label>A Jurusan R</label>
-                      <input type="text" class="form-control" id="jurusanAR" name="jurusanAR">
+                      <label>Jurusan B</label>
+                      <input type="text" class="form-control" id="jurusanB" name="jurusanB">
                       <i class="fas fa-check-circle"></i>
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+
+                    <div class="row wrap-dua-A">
+                      <div class="form-group col-md-6">
+                        <label>B Jurusan R</label>
+                        <input type="text" class="form-control" id="jurusanBR" name="jurusanBR">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>B Jurusan S</label>
+                        <input type="text" class="form-control" id="jurusanBS" name="jurusanBS">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>B Jurusan T</label>
+                        <input type="text" class="form-control" id="jurusanBT" name="jurusanBT">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>B Jurusan N</label>
+                        <input type="text" class="form-control" id="jurusanBN" name="jurusanBN">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                    </div>
+
                     <div class="form-group">
-                      <label>A Jurusan S</label>
-                      <input type="text" class="form-control" id="jurusanAS" name="jurusanAS">
+                      <label>Jurusan C</label>
+                      <input type="text" class="form-control" id="jurusanC" name="jurusanC">
                       <i class="fas fa-check-circle"></i>
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+
+                    <!-- Jurusan C -->
+                    <div class="row wrap-dua-A">
+                      <div class="form-group col-md-6">
+                        <label>C Jurusan R</label>
+                        <input type="text" class="form-control" id="jurusanCR" name="jurusanCR">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>C Jurusan S</label>
+                        <input type="text" class="form-control" id="jurusanCS" name="jurusanCS">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>C Jurusan T</label>
+                        <input type="text" class="form-control" id="jurusanCT" name="jurusanCT">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label>C Jurusan N</label>
+                        <input type="text" class="form-control" id="jurusanCN" name="jurusanCN">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <div class="invalid-input">Error message</div>
+                      </div>
+                    </div>
+
                     <div class="form-group">
-                      <label>A Jurusan T</label>
-                      <input type="text" class="form-control" id="jurusanAT" name="jurusanAT">
+                      <label>Tegangan RS</label>
+                      <input type="text" class="form-control" id="teganganRS" name="teganganRS">
                       <i class="fas fa-check-circle"></i>
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+
                     <div class="form-group">
-                      <label>A Jurusan N</label>
-                      <input type="text" class="form-control" id="jurusanAN" name="jurusanAN">
+                      <label>Tegangan RT</label>
+                      <input type="text" class="form-control" id="teganganRT" name="teganganRT">
                       <i class="fas fa-check-circle"></i>
                       <i class="fas fa-exclamation-circle"></i>
                       <div class="invalid-input">Error message</div>
                     </div>
+
+                    <div class="form-group">
+                      <label>Tegangan ST</label>
+                      <input type="text" class="form-control" id="teganganST" name="teganganST">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <div class="invalid-input">Error message</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Tegangan RN</label>
+                      <input type="text" class="form-control" id="teganganRN" name="teganganRN">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <div class="invalid-input">Error message</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Tegangan SN</label>
+                      <input type="text" class="form-control" id="teganganSN" name="teganganSN">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <div class="invalid-input">Error message</div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Tegangan TN</label>
+                      <input type="text" class="form-control" id="teganganTN" name="teganganTN">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-exclamation-circle"></i>
+                      <div class="invalid-input">Error message</div>
+                    </div>
+
                   </div>
                 </div>
               </div>
-
               <div class="card-footer text-right">
-                <button type="button" class="btn btn-primary" id="submit-user">Submit</button>
+                <button type="button" class="btn btn-primary" id="submit-pengukuran">Simpan</button>
               </div>
             </form>
-
           </div>
         </section>
-
       </div>
+
       <footer class="main-footer">
         <div class="footer-left">
           Copyright &copy; 2021 <div class="bullet"></div> Design By <a href="#">Me And My Friend</a>
