@@ -1,16 +1,10 @@
 <?php
 
-var_dump($_POST);
-
-echo ("<script>alert('Yes')</script>");
-
 if(isset($_POST['add_user'])) {
     add_user();
 }
 
 function add_user() {
-    echo ("<script>alert('Yes')</script>");
-
     $con=mysqli_connect ("localhost", 'root', '','demo');
     if (!$con) {
         die('Not connected : ' . mysqli_connect_error());
@@ -35,9 +29,11 @@ function add_user() {
 
 
     $result = mysqli_query($con,$query);
-    echo"Inserted Successfully";
+
     if (!$result) {
         die('Invalid query: ' . mysqli_error($con));
+    }else {
+        echo "Inserted Successfully";
     }
 }
 

@@ -58,15 +58,15 @@
             <a href="index.html">GD</a>
           </div>
           <ul class="sidebar-menu">
-            <li><a class="text_admin"> <span>MENU ADMIN</span></a></li>
-            <li><a class="nav-link" data-target="dashboard-section" href="index.php"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-            <li><a class="nav-link" data-target="input-gardu-section" href="input_gardu.php"><i class="fas fa-plus"></i> <span>Input Gardu</span></a></li>
-            <li><a class="nav-link active" data-target="input-pengukuran-section" href="input_pengukuran.php"><i class="fas fa-upload"></i> <span>Input Pengukuran</span></a></li>
-            <li><a class="nav-link" data-target="input-pengguna-section" href="input_user.php"><i class="fas fa-user-plus"></i> <span>Input Pengguna</span></a></li>
-            <li><a class="nav-link" data-target="list-data-gardu-section" href="list_gardu.php"><i class="fas fa-list"></i> <span>List Data Gardu</span></a></li>
-            <li><a class="nav-link" data-target="list-data-pengukuran-section" href="#list-data-pengukuran"><i class="fas fa-list-alt"></i> <span>List Data Pengukuran</span></a></li>
-            <li><a class="nav-link" data-target="list-data-overload-section" href="#list-data-overload"><i class="fas fa-th"></i> <span>List Data Overload</span></a></li>
-            <li><a class="nav-link" data-target="list-data-pengguna-section" href="#list-data-pengguna"><i class="fas fa-users"></i> <span>List Data Pengguna</span></a></li>
+              <li><a class="text_admin"> <span>MENU ADMIN</span></a></li>
+              <li><a class="nav-link" data-target="dashboard-section" href="index.php"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+              <li><a class="nav-link" data-target="input-gardu-section" href="input_gardu.php"><i class="fas fa-plus"></i> <span>Input Gardu</span></a></li>
+              <li><a class="nav-link  active" data-target="input-pengukuran-section" href="input_pengukuran.php"><i class="fas fa-upload"></i> <span>Input Pengukuran</span></a></li>
+              <li><a class="nav-link" data-target="input-pengguna-section" href="input_user.php"><i class="fas fa-user-plus"></i> <span>Input Pengguna</span></a></li>
+              <li><a class="nav-link" data-target="list-data-gardu-section" href="list_data_gardu.php"><i class="fas fa-list"></i> <span>List Data Gardu</span></a></li>
+              <li><a class="nav-link" data-target="list-data-pengukuran-section" href="list_data_pengukuran.php"><i class="fas fa-list-alt"></i> <span>List Data Pengukuran</span></a></li>
+              <li><a class="nav-link" data-target="list-data-overload-section" href="list_data_overload.php"><i class="fas fa-th"></i> <span>List Data Overload</span></a></li>
+              <li><a class="nav-link" data-target="list-data-pengguna-section" href="list_data_user.php"><i class="fas fa-users"></i> <span>List Data Pengguna</span></a></li>
           </ul>
         </aside>
       </div>

@@ -25,6 +25,10 @@
     border-radius: 5px;
 }
 
+.dashboard-section a {
+    text-decoration: none;
+}
+
 .header-icon {
     color : rgba(50,50,50,0.2);
 }
@@ -113,5 +117,5 @@
 
 
 /*###########################################
-            INPUT PENGGUNA
+            LIST PENGGUNA
 ###########################################*/

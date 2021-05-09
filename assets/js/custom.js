@@ -1,7 +1,3 @@
-document.getElementById('tanggal').valueAsDate = new Date();
-var x = new Date()
-// document.getElementById('waktu').value = "1:1";
-
 /*###############################
             Input User
 ###############################*/
@@ -28,7 +24,7 @@ $('#submit-user').click(function() {
             alamat:alamat.val(),
             password:password.val().trim()
         },function(data, status){
-            swal("", "Data Sudah Ditambahkan", "success");
+            swal("", "Input Data User Berhasil" , "success");
             $('#nama').val("");
             $('#email').val("");
             $('#nomor').val("");
@@ -114,6 +110,7 @@ function checkInput(nama, email, nomor){
     return error;
 }
 
+// document.getElementById('tanggal').valueAsDate = new Date();
 
 /*###############################
         Input Pengukuran
@@ -147,7 +144,6 @@ $('#submit-pengukuran').click(function() {
     var teganganRN = $('#teganganRN');
     var teganganSN = $('#teganganSN');
     var teganganTN = $('#teganganTN');
-
 
     if(!checkInput(kode, daya)){
         $.post("input_pengukuran_model.php", {
@@ -211,35 +207,47 @@ $('#submit-pengukuran').click(function() {
             $('#teganganSN').val("");
             $('#teganganTN').val("");
         });
+    }else {        
+        $('.input-pengukuran-section #kode').keyup(function(){
+            var valKode = $(this).val().trim();
+            if(valKode == ""){
+                setErrorFor($(this), 'Nama Tidak Boleh Kosong');
+            }else{
+                setSuccessFor($(this));
+            }
+        })
+
+        $('.input-pengukuran-section #daya').keyup(function(){
+            var valDaya = $(this).val().trim();
+            if(valDaya == ""){
+                setErrorFor($(this), 'Nama Tidak Boleh Kosong');
+            }else{
+                setSuccessFor($(this));
+            }
+        })
     }
 })
 
-// $('.input-gardu-section #kode').keyup(function(){
-//     var valNama = $(this).val().trim();
-//     if(valNama == ""){
-//         setErrorFor($(this), 'Nama Tidak Boleh Kosong');
-//     }else{
-//         setSuccessFor($(this));
-//     }
-// })
 
 function checkInput(kode, daya){
     var valKode = kode.val().trim();
     var valDaya = daya.val().trim();
     var error = false;
 
-    if(valKode == ""){
-        setErrorFor(kode, 'Kode Tidak Boleh Kosong');
-        error = true;
-    }else{
-        setSuccessFor(kode);
-    }
-
     if(valDaya == ""){
         setErrorFor(daya, 'Daya Tidak Boleh Kosong');
         error = true;
+        window.scrollTo(0,450)
     }else{
         setSuccessFor(daya);
+    }
+
+    if(valKode == ""){
+        setErrorFor(kode, 'Kode Tidak Boleh Kosong');
+        error = true;
+        window.scrollTo(0,150)
+    }else{
+        setSuccessFor(kode);
     }
 
     if(!error){

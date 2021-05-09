@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
@@ -34,8 +35,9 @@
         </form>
         <ul class="navbar-nav navbar-right">
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block grey-color">Hi, Ujang Maman</div></a>
+              <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block grey-color">Hi, Ujang Maman</div>
+            </a>
             <div class="dropdown-menu dropdown-menu-right">
               <a href="features-profile.html" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
@@ -57,16 +59,16 @@
             <a href="index.html">GD</a>
           </div>
           <ul class="sidebar-menu">
-              <li><a class="text_admin"> <span>MENU ADMIN</span></a></li>
-              <li><a class="nav-link active" data-target="dashboard-section" href="index.php"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
-              <li><a class="nav-link" data-target="input-gardu-section" href="input_gardu.php"><i class="fas fa-plus"></i> <span>Input Gardu</span></a></li>
-              <li><a class="nav-link" data-target="input-pengukuran-section" href="input_pengukuran.php"><i class="fas fa-upload"></i> <span>Input Pengukuran</span></a></li>
-              <li><a class="nav-link" data-target="input-pengguna-section" href="input_user.php"><i class="fas fa-user-plus"></i> <span>Input Pengguna</span></a></li>
-              <li><a class="nav-link" data-target="list-data-gardu-section" href="list_gardu.php"><i class="fas fa-list"></i> <span>List Data Gardu</span></a></li>
-              <li><a class="nav-link" data-target="list-data-pengukuran-section" href="#list-data-pengukuran"><i class="fas fa-list-alt"></i> <span>List Data Pengukuran</span></a></li>
-              <li><a class="nav-link" data-target="list-data-overload-section" href="#list-data-overload"><i class="fas fa-th"></i> <span>List Data Overload</span></a></li>
-              <li><a class="nav-link" data-target="list-data-pengguna-section" href="#list-data-pengguna"><i class="fas fa-users"></i> <span>List Data Pengguna</span></a></li>
-          </ul>          
+            <li><a class="text_admin"> <span>MENU ADMIN</span></a></li>
+            <li><a class="nav-link  active" data-target="dashboard-section" href="index.php"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
+            <li><a class="nav-link" data-target="input-gardu-section" href="input_gardu.php"><i class="fas fa-plus"></i> <span>Input Gardu</span></a></li>
+            <li><a class="nav-link" data-target="input-pengukuran-section" href="input_pengukuran.php"><i class="fas fa-upload"></i> <span>Input Pengukuran</span></a></li>
+            <li><a class="nav-link" data-target="input-pengguna-section" href="input_user.php"><i class="fas fa-user-plus"></i> <span>Input Pengguna</span></a></li>
+            <li><a class="nav-link" data-target="list-data-gardu-section" href="list_data_gardu.php"><i class="fas fa-list"></i> <span>List Data Gardu</span></a></li>
+            <li><a class="nav-link" data-target="list-data-pengukuran-section" href="list_data_pengukuran.php"><i class="fas fa-list-alt"></i> <span>List Data Pengukuran</span></a></li>
+            <li><a class="nav-link" data-target="list-data-overload-section" href="list_data_overload.php"><i class="fas fa-th"></i> <span>List Data Overload</span></a></li>
+            <li><a class="nav-link" data-target="list-data-pengguna-section" href="list_data_user.php"><i class="fas fa-users"></i> <span>List Data Pengguna</span></a></li>
+          </ul>
         </aside>
       </div>
 
@@ -75,6 +77,7 @@
         <section class="section mt-4 dashboard-section">
           <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-4">
+            <a href="list_data_gardu.php">
               <div class="card card-statistic data-gardu bg-shadow">
                 <h3>Gardu</h3>
                 <div class="box-content">
@@ -94,25 +97,28 @@
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4">
-              <div class="card card-statistic data-pengukuran">
-                <h3>Pengukuran</h3>
-                <div class="box-content">
-                  <div class="card-wrap">
-                    <div class="sum-data">
-                      0
+              <a href="list_data_pengukuran.php">
+                <div class="card card-statistic data-pengukuran">
+                  <h3>Pengukuran</h3>
+                  <div class="box-content">
+                    <div class="card-wrap">
+                      <div class="sum-data">
+                        0
+                      </div>
+                      <div class="tanggal data">
+                        13-Apr-21
+                      </div>
                     </div>
-                    <div class="tanggal data">
-                      13-Apr-21
+                    <div class="card-icon">
+                      <i class="fas fa-weight-hanging statistic-icon"></i>
                     </div>
-                  </div>
-                  <div class="card-icon">
-                    <i class="fas fa-weight-hanging statistic-icon"></i>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
 
             <div class="col-lg-4 col-md-4 col-sm-4">
+            <a href="list_data_user.php">
               <div class="card card-statistic data-pengguna">
                 <h3>Pengguna</h3>
                 <div class="box-content">
@@ -133,11 +139,11 @@
           </div>
 
           <div id="map"></div>
-          <?php include_once 'map.php';?>
+          <?php include_once 'map.php'; ?>
 
         </section>
-        
-    
+
+
       </div>
       <footer class="main-footer">
         <div class="footer-left">
@@ -151,9 +157,42 @@
   </div>
 
   <!-- General JS Scripts -->
+  <script src="../assets/js/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="../assets/js/bootstrap.js"></script>
   <script src="../assets/js/scripts.js"></script>
   <script src="../assets/js/custom.js"></script>
+
+  <script>
+    $.ajax({
+      url: "list_gardu_api.php",
+      async: true,
+      dataType: 'json',
+      success: function(data) {
+        $(".data-gardu .sum-data").text(data.length.toString());
+      }
+    });
+
+    $.ajax({
+      url: "list_pengukuran_api.php",
+      async: true,
+      dataType: 'json',
+      success: function(data) {
+        $(".data-pengukuran .sum-data").text(data.length.toString());
+      }
+    });
+
+    $.ajax({
+      url: "list_user_api.php",
+      async: true,
+      dataType: 'json',
+      success: function(data) {
+        $(".data-pengguna .sum-data").text(data.length.toString());
+      }
+    });
+  </script>
+
+
 </body>
+
 </html>
