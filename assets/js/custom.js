@@ -1,6 +1,6 @@
 document.getElementById('tanggal').valueAsDate = new Date();
 var x = new Date()
-document.getElementById('waktu').value = "1:1";
+// document.getElementById('waktu').value = "1:1";
 
 /*###############################
             Input User
@@ -127,20 +127,20 @@ $('#submit-pengukuran').click(function() {
     var alamat = $('#alamat');
     var indukN = $('#indukN');
     var jurusanA = $('#jurusanA');
-    var jurananAR = $('#jurusanAR');
-    var jurananAS = $('#jurusanAS');
-    var jurananAT = $('#jurusanAT');
-    var jurananAN = $('#jurusanAN');
+    var jurusanAR = $('#jurusanAR');
+    var jurusanAS = $('#jurusanAS');
+    var jurusanAT = $('#jurusanAT');
+    var jurusanAN = $('#jurusanAN');
     var jurusanB = $('#jurusanB');
-    var jurananBR = $('#jurusanBR');
-    var jurananBS = $('#jurusanBS');
-    var jurananBT = $('#jurusanBT');
-    var jurananBN = $('#jurusanBN');
+    var jurusanBR = $('#jurusanBR');
+    var jurusanBS = $('#jurusanBS');
+    var jurusanBT = $('#jurusanBT');
+    var jurusanBN = $('#jurusanBN');
     var jurusanC = $('#jurusanC');
-    var jurananCR = $('#jurusanCR');
-    var jurananCS = $('#jurusanCS');
-    var jurananCT = $('#jurusanCT');
-    var jurananCN = $('#jurusanCN');
+    var jurusanCR = $('#jurusanCR');
+    var jurusanCS = $('#jurusanCS');
+    var jurusanCT = $('#jurusanCT');
+    var jurusanCN = $('#jurusanCN');
     var teganganRS = $('#teganganRS');
     var teganganRT = $('#teganganRT');
     var teganganST = $('#teganganST');
@@ -152,20 +152,64 @@ $('#submit-pengukuran').click(function() {
     if(!checkInput(kode, daya)){
         $.post("input_pengukuran_model.php", {
             add_pengukuran:"",
-            nama:nama.val().trim(),
-            email:email.val().trim(),
-            nomor_hp:nomor.val().trim(),
-            jenis_kelamin:jenisKelamin,
-            alamat:alamat.val(),
-            password:password.val().trim()
+            kode:kode.val().trim(),
+            tanggal:tanggal.val(),
+            waktu:waktu.val(),
+            tim:tim.val().trim(),
+            daya:daya.val().trim(),
+            alamat:alamat.val().trim(),
+            indukN:indukN.val().trim(),
+            jurusanA:jurusanA.val().trim(),
+            jurusanAR:jurusanAR.val().trim(),
+            jurusanAS:jurusanAS.val().trim(),
+            jurusanAT:jurusanAT.val().trim(),
+            jurusanAN:jurusanAN.val().trim(),
+            jurusanB:jurusanB.val().trim(),
+            jurusanBR:jurusanBR.val().trim(),
+            jurusanBS:jurusanBS.val().trim(),
+            jurusanBT:jurusanBT.val().trim(),
+            jurusanBN:jurusanBN.val().trim(),
+            jurusanC:jurusanC.val().trim(),
+            jurusanCR:jurusanCR.val().trim(),
+            jurusanCS:jurusanCS.val().trim(),
+            jurusanCT:jurusanCT.val().trim(),
+            jurusanCN:jurusanCN.val().trim(),
+            teganganRS:teganganRS.val().trim(),
+            teganganRT:teganganRT.val().trim(),
+            teganganST:teganganST.val().trim(),
+            teganganRN:teganganRN.val().trim(),
+            teganganSN:teganganSN.val().trim(),
+            teganganTN:teganganTN.val().trim(),
         },function(data, status){
-            swal("", "Data Sudah Ditambahkan", "success");
-            $('#nama').val("");
-            $('#email').val("");
-            $('#nomor').val("");
-            lk.prop('checked',true)
+            swal("", "Data Pengukuran Sudah Ditambahkan", "success");
+            $('kode').val("");
+            $('#tanggal').val("");
+            $('#waktu').val("");
+            $('#tim').val("");
+            $('#daya').val("");
             $('#alamat').val("");
-            $('#password').val("");
+            $('#indukN').val("");
+            $('#jurusanA').val("");
+            $('#jurusanAR').val("");
+            $('#jurusanAS').val("");
+            $('#jurusanAT').val("");
+            $('#jurusanAN').val("");
+            $('#jurusanB').val("");
+            $('#jurusanBR').val("");
+            $('#jurusanBS').val("");
+            $('#jurusanBT').val("");
+            $('#jurusanBN').val("");
+            $('#jurusanC').val("");
+            $('#jurusanCR').val("");
+            $('#jurusanCS').val("");
+            $('#jurusanCT').val("");
+            $('#jurusanCN').val("");
+            $('#teganganRS').val("");
+            $('#teganganRT').val("");
+            $('#teganganST').val("");
+            $('#teganganRN').val("");
+            $('#teganganSN').val("");
+            $('#teganganTN').val("");
         });
     }
 })
